@@ -9,6 +9,7 @@ logging.basicConfig(level=logging.INFO,
 def main():
     parser = create_parser()
     args = parser.parse_args()
+    logging.info("I'm not a mothafucka pidor!")
     logging.info("Passed arguments: {}".format(args))
 
 def create_parser():
