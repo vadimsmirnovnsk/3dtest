@@ -3,6 +3,9 @@ import os
 import logging
 import argparse
 
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s %(levelname)s %(message)s")
+
 def main():
     parser = create_parser()
     args = parser.parse_args()
